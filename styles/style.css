@@ -12,19 +12,41 @@
     align-items: center;
     border-bottom: 1px solid #333;
 }
+
 .logo{
     font-size: 2.8em;
     padding: 10px 30px 0;
 }
+
+.nav-links{
+    margin: 10px 40px ;
+}
+
 .header-nav a{
     text-decoration: none;
     color: #000;
     font-size: 1.2em;
-    padding: 15px 150px 0;
+    margin: 15px 15px 0;
+    position: relative;
 }
-.header-nav a:hover{
-    color: #0000ff;
+
+.header-nav a:after{
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -5px ;
+    width: 0;
+    height: 7px;
+    background-color: #0000ff;
+    transition: 0.5s ;
 }
+
+.header-nav a:hover:after{
+    width: 100%;
+    left: 0;
+    
+}
+
 .citation{
     display: flex;
     justify-content: center;
@@ -32,12 +54,14 @@
     flex-direction: column;
     padding-top: 130px;
 }
+
 .button{
     display: flex;
     justify-content: center;
     align-items: center;
     padding-top: 90px;
 }
+
 .button .btn-start{
     width: 150px;
     height: 40px;
@@ -46,16 +70,19 @@
     background-color: #fff;
     box-shadow: 2px 2px 2px 2px #333;
 }
+
 .btn-start a{
     text-decoration: none;
     color: #000;
-} 
+}
+
 .btn-start:hover,
 .btn-start  a:hover{
     background-color: #000;
     color: #fff;
     rotate: 360deg;
 }
+
 /****Style de la page quizz**/
 .quiz-citation,
 cite
@@ -66,6 +93,7 @@ cite
     text-align: center;
     padding-top: 20px;
 }
+
 .app{
     background: #0000ff;
      width: 90%;
@@ -74,6 +102,7 @@ cite
      border-radius: 10px;
      padding: 30px;
 }
+
 .app h1{
     font-size: 25px ;
     color:#000f24 ;
@@ -82,14 +111,17 @@ cite
     padding-bottom: 30px;
     text-align: center;
 }
+
 .quiz{
     padding: 20px 0;
 }
+
 .quiz h2{
     font-size: 18px;
     color: #000f24 ;
     font-weight: 600;
 }
+
 .btn{
     background: #fff;
     color: #222;
@@ -103,10 +135,12 @@ cite
     transition: all 0.1s;
     cursor: pointer;
 }
+
 .btn:hover:not([disabled]){
     background: #222;
     color: #fff;
 }
+
 .btn:disabled{
     cursor:no-drop;
 }
@@ -122,10 +156,12 @@ cite
     cursor: pointer;
     display: none;
 }
+
 /*****style les buttons pour les cas corrects et faux**/
 .correct{
     background: #9aeabc;
 }
+
 .incorrect{
     background: #ff9393;
 }
@@ -138,6 +174,7 @@ cite
     gap: 50px;
     padding-top: 50px ;
 }
+
 .categori-content{
     width: 200px;
     height: 200px;
@@ -146,31 +183,39 @@ cite
     border: solid 1px #333;
     box-shadow: 2px 3px 1px 1px #333;
 }
+
 .categori-content h2{
     text-align: center;
     padding-top: 5px ;
     padding-bottom: 5px ;
 }
+
 .categori-content p{
     text-align: center;
 }
+
 .categori-content button{
      width: 100px;
      height: 30px;
      border-radius: 4%;
 }
+
 .btn-2,
 .btn-3{
     margin: 20px 20px 0 40px;
 }
+
 .btn-1{
     margin: 7px 20px 0 40px;
     
 }
+
 .btn-4{
     margin: 15px 20px 0 40px;
 }
+
 .btn-4 a{
     text-decoration: none;
     color: #000;
 }
+

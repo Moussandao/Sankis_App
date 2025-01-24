@@ -219,3 +219,12 @@ nextButton.addEventListener("click",()=>{
 
 /*******Appel de la function startQuiz ****/
  startQuiz();
+
+
+ /******Afficher le formulaire ****/
+ const iconUser=getElementById('user-icon');
+ const userForm=getElementByClassName('user-form');
+
+  iconUser.addEventListener('click',()=>{
+       userForm.classList.toggle('active');
+  });
