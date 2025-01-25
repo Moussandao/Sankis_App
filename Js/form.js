@@ -1,15 +1,14 @@
 const switchBtn = document.getElementById('switch-to-register');
 const switchBtn2 = document.getElementById('switch-to-login');
-const loginSection = document.querySelector('.login');
-const registerSection = document.querySelector('.register');
+const Wrapper = document.querySelector('.wrapper');
 
-switchBtn.addEventListener('click', () => {
-  loginSection.classList.add('hide');
-  registerSection.classList.remove('hide');
+switchBtn.addEventListener('click', (e) => {
+  e.preventDefault();
+  Wrapper.classList.add("hidden")
 });
 
-switchBtn2.addEventListener('click', () => {
-  loginSection.classList.remove('hide');
-  registerSection.classList.add('hide');
+switchBtn2.addEventListener('click', (e) => {
+   e.preventDefault();
+  Wrapper.classList.remove('hidden');
 });
-
+ 

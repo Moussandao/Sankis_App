@@ -49,15 +49,6 @@ const questions=[
         ]
     },
     {
-        question:"Comment appelle-t-on une personne qui habite en ville?",
-        answers:[
-            { text: "un citadin", correct:true},
-            { text: "un vilain", correct:false},
-            { text: "un visiteur", correct:false},
-            { text: "un villageois", correct:false},
-        ]
-    },
-    {
         question:"Comment appelle-t-on une annee qui compte 366jours?",
         answers:[
             { text: " synonyme", correct:false},
@@ -76,7 +67,7 @@ const questions=[
         ]
     },
     {
-        question:"Comment appelle-t-on qui fait du velo?",
+        question:"Comment appelle-t-on quelqu'un qui fait du velo?",
         answers:[
             { text: "sportif", correct:false},
             { text: "velo", correct:false},
@@ -91,33 +82,6 @@ const questions=[
             { text: "coordonniers", correct:false},
             { text: "manguiers", correct:false},
             { text: "voyageurs", correct:false},
-        ]
-    },
-    {
-        question:"Comment appelle-t-on un dirigeant d'empire?",
-        answers:[
-            { text: "roi", correct:true},
-            { text: "reine", correct:false},
-            { text: "empereur", correct:false},
-            { text: "empire", correct:false},
-        ]
-    },
-    {
-        question:"Comment appelle-t-on une personne qui travaille aux champs?",
-        answers:[
-            { text: "Agriculteur", correct:true},
-            { text: "coordonniers", correct:false},
-            { text: "manguiers", correct:false},
-            { text: "voyageurs", correct:false},
-        ]
-    },
-    {
-        question:"Quel est le titre des rois du cayor?",
-        answers:[
-            { text: "Mansa", correct:true},
-            { text: "Damel", correct:false},
-            { text: "Bourba Djolof", correct:false},
-            { text: "Alboury", correct:false},
         ]
     },
     {
@@ -217,14 +181,9 @@ nextButton.addEventListener("click",()=>{
     }
 })
 
-/*******Appel de la function startQuiz ****/
+/*******Appelle de la function startQuiz ****/
  startQuiz();
 
 
- /******Afficher le formulaire ****/
- const iconUser=getElementById('user-icon');
- const userForm=getElementByClassName('user-form');
 
-  iconUser.addEventListener('click',()=>{
-       userForm.classList.toggle('active');
-  });
+

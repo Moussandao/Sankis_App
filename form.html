@@ -4,23 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulaire de connexion et de connexion</title>
-    <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/form.css">
 </head>
 <body>
-  <header class="header-nav">
-    <h1 class="logo">Sankis-Quizz</h1>
-  <div class="nav-links">
-   <a href="index.html">Home</a>
-  <a href="form.html"><i class="fas fa-user"></i></a>
-  </div>
-</header>
+<!-----Mes icones pour le formualaire----->
+<!-----      <i class="fa fa-envelope-o" aria-hidden="true"></i>
+             <i class="fa fa-lock" aria-hidden="true"></i>
+             <i class="fa fa-user" aria-hidden="true"></i>          
+                                                                  -->
  <!-----Formulaire de connexion------->
-<div class="wrapper">
-  <!-----  section de connexion----->
-  <section class="login">
-    <h1>Connexion</h1>
-    <form >
+<div class="container">
+  <div class="wrapper">
+    <section class="login">
+<div class="link-home">
+  <i class="fa fa-arrow-left" aria-hidden="true"></i>
+  <a href="index.html" > Back to Home</a>
+</div>
+      <h1>Connexion</h1>
       <div class="inputBox">
         <input type="email" placeholder="Email" required>
         <i class="fa fa-envelope-o" aria-hidden="true"></i>
@@ -31,40 +31,43 @@
       </div>
       <div class="forgot">
         <input type="checkbox">
-        <a href="">mot de pass oublie?</a>
+        <a href="#">Mot de pass oublie?</a>
       </div>
-      <button>Connexion</button>
+      <button>connexion</button>
       <div class="register-option">
-        <span>Pas de compe?</span>
-        <a href="" id="switch-to-register">Creer un compte!</a>
+        <span>Pas de compte?</span>
+        <a href="#" id="switch-to-register">Creer un compte!</a>
       </div>
-    </form>
-  </section>  
-  <!-----section d'incription----->
-  <section class="register">
+    </section>
+    <!---section register---->
+    <section class="register">
+      <div class="link-home">
+        <i class="fa fa-arrow-left" aria-hidden="true"></i>
+        <a href="index.html" > Back to Home</a>
+      </div>
       <h1>Inscription</h1>
-      <form >
-        <div class="inputBox">
-          <input type="text" placeholder="Nom" required>
-          <i class="fa fa-user" aria-hidden="true"></i>
-        </div>
-        <div class="inputBox">
-          <input type="email" placeholder="Email" required>
-          <i class="fa fa-envelope-o" aria-hidden="true"></i>
-        </div>
-        <div class="inputBox">
-          <input type="password" placeholder="mot de pass" required>
-          <i class="fa fa-lock" aria-hidden="true"></i>
-        </div>
-        <button>inscription</button>
-        <div class="register-option">
-          <span>Deja un compe?</span>
-          <a href="" id="switch-to-login">Se connecter!</a>
-        </div>
-      </form>
-  </section>
+      <div class="inputBox">
+        <input type="text" placeholder="Nom" required>
+        <i class="fa fa-user" aria-hidden="true"></i>
+      </div>
+      <div class="inputBox">
+        <input type="email" placeholder="Email" required>
+        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+      </div>
+      <div class="inputBox">
+        <input type="password" placeholder="mot de pass" required>
+        <i class="fa fa-lock" aria-hidden="true"></i>
+      </div>
+      <button>incription</button>
+      <div class="register-option">
+        <span>Deja un compte?</span>
+        <a href="#" id="switch-to-login">Connectez-vous!</a>
+      </div>
+    </section>
+  </div>
 </div>
   
+
 <script src="Js/form.js"></script>
   <script src="https://kit.fontawesome.com/6202d4b736.js" crossorigin="anonymous"></script>
 </body>
